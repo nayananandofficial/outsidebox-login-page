@@ -9,90 +9,77 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Header Section */
 .header {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
 }
-
 .header .navicon {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 .header .logoname {
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding-left: 0.5em;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-left: 0.5em;
 }
 
-/* Footer Section */
 .footer {
-    padding-left: 10px;
-    text-align: center;
-    padding-top: 2em;
+  padding-left: 10px;
+  text-align: center;
+  padding-top: 2em;
 }
-
 .footer .signIn_link {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
-
 .footer .signIn_link a {
-    color: #007bff;
-    text-decoration: none;
+  color: #007bff;
+  text-decoration: none;
 }
-
 .footer .signIn_link a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-/* Main Section */
 .mainContainer {
   height: 100vh;
   display: flex;
 }
-
-.formContainer {
-    margin: auto 20%;
-    padding-top: 10%;
+.mainContainer .formContainer {
+  margin: auto 20%;
+  padding-top: 10%;
 }
-
-.main_heading {
+.mainContainer .main_heading {
   font-size: 1.5rem;
   margin-top: 0;
 }
 
-/* Form Section */
 .input-label {
   font-size: 0.9rem;
 }
 
 .type_input {
-height: 2.5em;
-width: 100%;
-margin-bottom: 1em; 
-font-size: 1rem;
-border: 1px solid #ccc;
-border-radius: 5px;
+  height: 2.5em;
+  width: 100%;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 button {
-margin-bottom: 2em;
-height: 2.5em;
-width: 100%;
-color: white;
-background-color: black;
-border: none;
-border-radius: 5px;
-transition: background-color 0.3s;
+  margin-bottom: 2em;
+  height: 2.5em;
+  width: 100%;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
 }
-
 button:hover {
-background-color: rgb(82, 82, 82);
-cursor: pointer;
+  background-color: rgb(82, 82, 82);
+  cursor: pointer;
 }
 
-/* Sign up Logo Section */
 .optionTitle {
   text-align: center;
   font-size: 0.9rem;
@@ -103,8 +90,7 @@ cursor: pointer;
   display: flex;
   justify-content: space-evenly;
 }
-
-.icon {
+.icons-container .icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,55 +101,41 @@ cursor: pointer;
   border-radius: 50%;
   transition: transform 0.2s, background-color 0.3s;
 }
-
-.icon:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+.icons-container .icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
-
-.fa-brands{
+.icons-container .icon .fa-brands {
   font-size: 1.5rem;
 }
 
-/* Right panel Theme Section */
 .page {
   flex: 1;
 }
-
-.image > img {
+.page .image > img {
   height: 100vh;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
-/* Media Queries for Responsiveness */
 
 @media screen and (max-width: 768px) {
   .mainContainer {
     flex-direction: column;
   }
-
-  .iamge > img {
+  .image > img {
     width: 100%;
     height: 50vh;
   }
-
   .left {
     padding: 20px;
   }
-
-  .header, .footer {
+  .header,
+  .footer {
     flex-direction: column;
     text-align: center;
   }
-
-  .header, .logoname {
-    margin-top: 10px;
-  }
 }
-
-/* Mobile width Responsiveness */
-
 @media screen and (max-width: 480px) {
   .type_input,
   button {
@@ -171,8 +143,7 @@ cursor: pointer;
     width: 90%;
     margin: 0 auto;
   }
-
-  .icon{
+  .icon {
     margin: 0 auto;
   }
-}
+}/*# sourceMappingURL=style.css.map */

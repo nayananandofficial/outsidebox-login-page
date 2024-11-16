@@ -1,0 +1,15 @@
+// Main container
+.mainContainer {
+    height: 100vh;
+    display: flex;
+  
+    .formContainer {
+      margin: auto 20%;
+      padding-top: 10%;
+    }
+  
+    .main_heading {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+  }

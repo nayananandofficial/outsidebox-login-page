@@ -1,0 +1,32 @@
+// Social icons
+.optionTitle {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0;
+  }
+  
+  .icons-container {
+    display: flex;
+    justify-content: space-evenly;
+  
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 50px;
+      padding: 10px;
+      border: solid 2px #bbbaba;
+      border-radius: 50%;
+      transition: transform 0.2s, background-color 0.3s;
+  
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+  
+      .fa-brands {
+        font-size: 1.5rem;
+      }
+    }
+  }

@@ -1,0 +1,16 @@
+// Header
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  
+    .navicon {
+      cursor: pointer;
+    }
+  
+    .logoname {
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding-left: 0.5em;
+    }
+  }
